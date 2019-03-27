@@ -1,5 +1,5 @@
 class Character
-  attr_reader :name, :actor, :salary
+  attr_reader :name, :actor, :salary, :character_hash
 
   def initialize(character_hash)
     @character_hash = character_hash

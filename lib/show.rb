@@ -5,12 +5,18 @@ class Show
     @name = name
     @creator = creator
     @characters = characters
+    @salaries = []
+  end
+
+  def all_salaries
+    @salaries = @characters.map do |character|
+      character.salary
+    end
+    @salaries
   end
 
   def total_salary
-    salaries = @characters.map do |character|
-      character.salary
-    end
-    salaries.sum
+    all_salaries
+    @salaries.sum
   end
 end
