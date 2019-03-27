@@ -5,7 +5,6 @@ class Show
     @name = name
     @creator = creator
     @characters = characters
-    @salaries = []
   end
 
   def all_salaries
